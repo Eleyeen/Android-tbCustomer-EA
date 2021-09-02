@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.activity.login.SignupActivity"
+    android:background="@color/colorBlue"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/ripple_bg_borderless_oval"
+            app:srcCompat="@drawable/ic_back"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ll_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/ll_toolbar"
+                    android:orientation="vertical"
+                    android:layout_marginTop="@dimen/activity_vertical_margin"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/jobs"
+                        android:textSize="35dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="@dimen/text_medium"
+                        android:gravity="center"
+                        android:textColor="@color/colorWhite"
+                        android:text="@string/connecting_you_with"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="32dp"
+                    android:paddingRight="32dp">
+
+                    <com.toolsbox.customer.view.customUI.IconEditText
+                        android:id="@+id/et_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height_normal"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:hint="@string/name"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/tf_user_w"
+                        android:textCursorDrawable="@color/colorWhite"
+                        app:compoundDrawableHeight="20dp"
+                        app:compoundDrawableWidth="20dp"
+                        android:background="@drawable/corner_field"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="@dimen/text_title"
+                        android:textColor="@color/colorWhite"/>
+
+                    <com.toolsbox.customer.view.customUI.IconEditText
+                        android:id="@+id/et_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height_normal"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:hint="@string/email"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/tf_email_w"
+                        android:textCursorDrawable="@color/colorWhite"
+                        app:compoundDrawableHeight="20dp"
+                        app:compoundDrawableWidth="20dp"
+                        android:background="@drawable/corner_field"
+                        android:imeOptions="actionNext"
+                        android:maxLines="1"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="@dimen/text_title"
+                        android:textColor="@color/colorWhite"/>
+
+                    <com.toolsbox.customer.view.customUI.IconEditText
+                        android:id="@+id/et_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/text_view_height_normal"
+                        android:layout_marginTop="16dp"
+                        android:hint="@string/password"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:drawablePadding="8dp"
+                        android:drawableLeft="@drawable/tf_password_w"
+                        app:compoundDrawableHeight="20dp"
+                        app:compoundDrawableWidth="20dp"
+                        android:textCursorDrawable="@color/colorWhite"
+                        android:background="@drawable/corner_field"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:singleLine="true"
+                        android:inputType="textPassword"
+                        android:textColorHint="@color/colorWhite"
+                        android:textSize="@dimen/text_title"
+                        android:textColor="@color/colorWhite"/>
+
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="16dp"
+                        android:orientation="horizontal">
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/cb_terms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:theme="@style/checkBoxStyle"
+                            android:buttonTint="@color/colorWhite"
+                            android:textSize="@dimen/text_normal"/>
+
+                        <TextView
+                            android:id="@+id/tv_terms"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/text_normal"
+                            android:text="@string/i_agree_to_the_terms"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="32dp"
+                        android:paddingRight="32dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cv_register"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/button_height_normal"
+                        android:clickable="true"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_normal"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        card_view:cardBackgroundColor="@android:color/transparent"
+                        card_view:cardElevation="0dp"
+                        app:cardCornerRadius="25dp"
+                        android:focusable="true">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/corner_button"
+                            android:gravity="center_horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:background="@android:color/transparent"
+                                android:paddingRight="3dp"
+                                android:text="@string/create_accont"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/button_font_normal" />
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <RelativeLayout
+                        android:id="@+id/ll_separator"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorBlue"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_below="@+id/cv_login">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_centerVertical="true"
+                            android:background="@color/colorWhite"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/text_title"
+                            android:paddingLeft="@dimen/activity_vertical_margin_small"
+                            android:paddingRight="@dimen/activity_vertical_margin_small"
+                            android:background="@color/colorBlue"
+                            android:layout_centerInParent="true"
+                            android:text="@string/or_sign_in_with"
+                            android:textColor="@color/colorWhite"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_below="@+id/ll_separator">
+
+                        <ImageButton
+                            android:id="@+id/btn_facebook"
+                            android:layout_width="@dimen/button_height_normal"
+                            android:layout_height="@dimen/button_height_normal"
+                            android:layout_alignParentLeft="true"
+                            android:background="@drawable/bg_circle"
+                            android:padding="16dp"
+                            app:srcCompat="@drawable/ic_s_fb"/>
+
+                        <ImageButton
+                            android:id="@+id/btn_twitter"
+                            android:layout_width="@dimen/button_height_normal"
+                            android:layout_height="@dimen/button_height_normal"
+                            android:layout_centerHorizontal="true"
+                            android:padding="7dp"
+                            android:background="@drawable/bg_circle"
+                            app:srcCompat="@drawable/ic_s_twitter"/>
+
+                        <ImageButton
+                            android:id="@+id/btn_google"
+                            android:layout_width="@dimen/button_height_normal"
+                            android:layout_height="@dimen/button_height_normal"
+                            android:padding="7dp"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/bg_circle"
+                            app:srcCompat="@drawable/ic_s_google"
+                            android:layout_alignParentRight="true" />
+
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:layout_marginTop="80dp"
+                        android:layout_marginBottom="@dimen/activity_vertical_margin"
+                        android:textSize="@dimen/text_small"
+                        android:text="@string/copyright_jobs"
+                        android:textColor="@color/colorWhite"/>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"
+        android:layout_marginBottom="30dp" />
+</LinearLayout>

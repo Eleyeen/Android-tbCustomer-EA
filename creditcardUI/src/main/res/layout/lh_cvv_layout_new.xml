@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CVV / CVC"
+        android:textSize="14sp"
+        android:layout_marginBottom="5dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bg_rounded_gray_"
+        android:padding="5dp"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/et_cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:hint="XXX"
+            android:textColorHint="@color/ln_colorInfoDesc"
+            android:textColor="#000000"
+            android:background="@color/colorTransparent"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_error_cvv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:textColor="@color/ln_colorError"/>
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@drawable/bg_rounded_gray_"
+    android:padding="5dp"
+    android:gravity="center_vertical"
+    >
+
+<!--    <ImageView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="2dp"-->
+<!--        android:src="@drawable/payment_method_generic_card"/>-->
+
+    <EditText
+        android:id="@+id/et_card_number"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textSize="14sp"
+        android:textColor="#000000"
+        android:textColorHint="@color/ln_colorInfoDesc"
+        android:hint="XXXX XXXX XXXX XXXX"
+        android:background="@color/colorTransparent"/>
+
+    <LinearLayout
+        android:id="@+id/ll_scan"
+        android:layout_width="95dp"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_rounded">
+
+        <ImageView
+            android:id="@+id/iv_scan"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_scan"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Scan"
+            android:textSize="16sp"
+            android:textColor="@color/ln_colorWhite"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
